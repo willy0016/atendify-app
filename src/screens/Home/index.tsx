@@ -1,11 +1,18 @@
-import { Text, View } from 'react-native';
-import {styles} from "./styles";
+
+import {Container, Header, UserWrapper, UserData, LogoutButton, LogoutIcon} from "./styles";
 
 export function Home() {
     return (
-        <View style={styles.container}>
-            <Text>Atendify 2025</Text>
-        </View>
+        <Container>
+            <Header>
+                <UserWrapper>
+                    <UserData></UserData>
+                    <LogoutButton>
+                        <LogoutIcon></LogoutIcon>
+                    </LogoutButton>
+                </UserWrapper>
+            </Header>
+        </Container>
     );
 }
 
