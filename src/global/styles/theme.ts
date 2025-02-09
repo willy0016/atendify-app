@@ -1,4 +1,4 @@
-export default {
+const theme = {
     colors: {
         primary300: '#140623',
         primary200: '#4C1F7A',
@@ -20,4 +20,6 @@ export default {
         semibold: 'Montserrat_600SemiBold',
         bold: 'Montserrat_700Bold',
     }
-}
+} as const;
+
+export default theme;

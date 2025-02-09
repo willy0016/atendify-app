@@ -10,9 +10,14 @@ import {
 import {Home} from "./src/screens/Home";
 import {Loading} from "./src/components/Loading";
 import theme from "./src/global/styles/theme"
+import {useState} from "react";
+import SplashScreen from "./src/components/SplashScreen";
+
 
 export default function App() {
-    let[fontsLoaded] = useFonts({
+    const [showSplash, setShowSplash] = useState(true);
+
+    let [fontsLoaded] = useFonts({
         Montserrat_400Regular,
         Montserrat_500Medium,
         Montserrat_600SemiBold,
@@ -24,10 +29,16 @@ export default function App() {
         return <Loading />;
     }
 
-  return (
-    <ThemeProvider theme={theme}>
-      <StatusBar style="auto" />
-      <Home />
-    </ThemeProvider>
-  );
+    return (
+        <ThemeProvider theme={theme}>
+            {showSplash ? (
+                <SplashScreen onAnimationComplete={() => setShowSplash(false)} />
+            ) : (
+                <>
+                    <StatusBar style="auto" />
+                    <Home />
+                </>
+            )}
+        </ThemeProvider>
+    );
 }
