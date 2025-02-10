@@ -16,8 +16,7 @@ Atendify é um aplicativo em desenvolvimento, criado com **React Native**, **Exp
 
 Até o momento, foram implementadas as seguintes funcionalidades:  
 
-- ✅ **Configuração inicial do projeto** utilizando React Native, Expo e TypeScript.  
-- ✅ **Integração com o Calendly** para gerenciamento dos agendamentos.  
+- ✅ **Configuração inicial do projeto** utilizando React Native, Expo e TypeScript.   
 - ✅ **Organização do código** conforme os padrões ensinados nas aulas.  
 - ✅ **Separação de estilos** em arquivos `.ts`, separados dos componentes `.tsx`.  
 - ✅ **Definição de tema global**, incluindo cores, fontes e strings dentro de `src/global`.  
